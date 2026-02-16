@@ -9,13 +9,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-orbs">
-    <span></span><span></span><span></span>
-  </div>
-
   <header class="hero">
     <nav class="nav">
       <div class="brand">Karthik</div>
+      <button id="themeToggle" class="toggle">🌓</button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -26,34 +23,29 @@
     </nav>
 
     <section class="hero-content">
-      <h1>Building <span>clean web</span> & <span>smart code</span></h1>
-      <p>
+      <h1 data-animate>Building <span>clean web</span> & <span>smart code</span></h1>
+      <p data-animate>
         Computer Science (Core) undergraduate at Sreenidhi Institute of Science & Technology (2024–2028).  
-        Curious builder exploring Python, Web, Generative AI, and Cloud IoT.
+        Exploring Python, Web, Generative AI, and Cloud IoT. Open to internships & fresher roles.
       </p>
-      <div class="cta">
+      <div class="cta" data-animate>
         <a class="btn primary" href="#work">View Projects</a>
-        <a class="btn ghost" target="_blank" href="https://www.linkedin.com/in/karthik-ganipineni-10324b3a7">LinkedIn</a>
+        <a class="btn ghost" target="_blank" href="resume.pdf">Download Resume</a>
       </div>
     </section>
   </header>
 
   <main class="wrap">
-    <section id="about" class="glass">
+    <section id="about" class="glass" data-animate>
       <h2>About</h2>
       <p>
-        I love turning ideas into simple, useful experiences on the web. I’m building a strong foundation in
-        Python and front-end development while experimenting with SEO, Generative AI, and AWS IoT.
-        Looking for internships to learn fast, ship features, and grow with real teams.
+        Motivated Computer Science (Core) student with hands-on beginner experience in Python and front-end development.
+        Actively building projects and applying SEO fundamentals, Generative AI concepts, and AWS IoT basics. Seeking
+        opportunities to learn fast, contribute to real products, and grow with a tech team.
       </p>
-      <div class="highlights">
-        <div><strong>5+</strong><span>Certifications</span></div>
-        <div><strong>2</strong><span>Live Projects</span></div>
-        <div><strong>2024–2028</strong><span>CSE (Core)</span></div>
-      </div>
     </section>
 
-    <section id="skills" class="grid">
+    <section id="skills" class="grid" data-animate>
       <h2>Skills</h2>
       <div class="chips">
         <span>Python</span><span>HTML</span><span>CSS</span><span>SEO</span>
@@ -61,40 +53,54 @@
       </div>
     </section>
 
-    <section id="work" class="grid">
+    <section id="work" class="grid" data-animate>
       <h2>Projects</h2>
       <article class="card">
         <h3>Personal Portfolio</h3>
-        <p>Ultra-modern portfolio with glassmorphism, animated gradients, and responsive layout.</p>
+        <p>Modern portfolio with glass UI, animations, and responsive layout.</p>
         <p class="stack">HTML • CSS • GitHub Pages</p>
         <a class="link" href="#" target="_blank">Live ↗</a>
       </article>
       <article class="card">
-        <h3>Python Mini App (Coming Soon)</h3>
-        <p>CLI utility to practice logic, input validation, and clean output formatting.</p>
+        <h3>Python Mini App</h3>
+        <p>CLI tool for practicing logic, validation, and clean outputs.</p>
         <p class="stack">Python</p>
+        <a class="link" href="#" target="_blank">Code ↗</a>
       </article>
     </section>
 
-    <section id="certs" class="glass">
+    <section id="certs" class="glass" data-animate>
       <h2>Certifications</h2>
       <ul class="timeline">
-        <li><b>Infosys</b> — Basics of Python</li>
-        <li><b>Infosys</b> — Web Fundamentals (HTML)</li>
-        <li><b>SERP Hub</b> — SEO Starter Course</li>
-        <li><b>Generative AI</b> — Foundations</li>
-        <li><b>AWS</b> — Getting Started with IoT</li>
+        <li>Basics of Python – Infosys Springboard</li>
+        <li>Web Fundamentals (HTML) – Infosys Springboard</li>
+        <li>SEO Starter Course – SERP Hub</li>
+        <li>Generative AI for Beginners</li>
+        <li>Getting Started with AWS IoT – AWS</li>
       </ul>
     </section>
 
-    <section id="contact" class="glass contact">
+    <section id="contact" class="glass contact" data-animate>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:karthikg.ganipineni0@gmail.com">karthikg.ganipineni0@gmail.com</a></p>
-      <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/karthik-ganipineni-10324b3a7">karthik-ganipineni</a></p>
+      <p>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/karthik-ganipineni-10324b3a7">Profile</a></p>
       <p>GitHub: <a target="_blank" href="https://github.com/karthikbeats001-dot">karthikbeats001-dot</a></p>
     </section>
   </main>
 
   <footer class="footer">© 2026 Karthik Ganipineni</footer>
+
+  <script>
+    // Dark / Light theme
+    const toggle = document.getElementById('themeToggle');
+    toggle.onclick = () => document.body.classList.toggle('light');
+
+    // Scroll animations
+    const els = document.querySelectorAll('[data-animate]');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => e.target.classList.toggle('show', e.isIntersecting));
+    }, { threshold: 0.2 });
+    els.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
