@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Karthik Ganipineni - CSE student portfolio with skills in Python, HTML, SEO, Generative AI, and AWS IoT." />
+  <meta name="keywords" content="Karthik Ganipineni, CSE Student, Python, HTML, SEO, Generative AI, AWS IoT, Portfolio" />
+  <title>Karthik Ganipineni | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Karthik Ganipineni</h1>
+      <p>CSE (Core) Student | Python • HTML • SEO • GenAI • AWS IoT</p>
+      <a class="btn" href="https://www.linkedin.com/in/karthik-ganipineni-10324b3a7" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science (Core) undergraduate at Sreenidhi Institute of Science & Technology (2024–2028).
+        I enjoy learning new technologies and building small projects to improve my practical skills.
+        Currently seeking internship and fresher opportunities.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="grid">
+        <li>Python (Basics)</li>
+        <li>HTML & Web Fundamentals</li>
+        <li>SEO (On-page)</li>
+        <li>Generative AI (Foundations)</li>
+        <li>AWS IoT (Basics)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Basics of Python – Infosys Springboard</li>
+        <li>Web Fundamentals: HTML – Infosys Springboard</li>
+        <li>SEO Starter Course – SERP Hub</li>
+        <li>Generative AI for Beginners</li>
+        <li>Getting Started with AWS IoT – AWS</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:karthikg.ganipineni0@gmail.com">karthikg.ganipineni0@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/karthik-ganipineni-10324b3a7" target="_blank">Visit Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Karthik Ganipineni</p>
+  </footer>
+
+</body>
+</html>
